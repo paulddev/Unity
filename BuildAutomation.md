@@ -161,22 +161,20 @@
 ![image](https://user-images.githubusercontent.com/31722512/166261976-d10ebd76-d545-4fe2-9b03-2d184eaf145d.png)
 ![image](https://user-images.githubusercontent.com/31722512/166262148-996616b2-d163-47ac-a3bf-20813480655b.png)
 
+## 노하우
+![image](https://user-images.githubusercontent.com/31722512/166262499-c014e1ef-e795-4952-9810-b9f4fb5975fc.png)
+맥 미니에 설치해서 사용한다.
 
+![image](https://user-images.githubusercontent.com/31722512/166262657-cc1df631-0ac9-4a4d-ab40-7af72c8b3285.png)
+![image](https://user-images.githubusercontent.com/31722512/166262888-8408be06-9fcb-4c1b-9045-2dc0e9b7a16c.png)
+매달마다 업데이트를 하는 프로젝트라면 분산 처리가 필요하다. <br>
+젠킨스에서는 Master-Slave 를 이용해서 분산 처리를 할 수 있도록 지원한다.
+![image](https://user-images.githubusercontent.com/31722512/166263080-3fd6339d-e232-4e31-86d6-23c6886339cc.png)
+![image](https://user-images.githubusercontent.com/31722512/166263158-8ad02c08-b2ba-4155-9ff0-001eb83471da.png)
+![image](https://user-images.githubusercontent.com/31722512/166263210-012510f3-0f45-450c-8b69-3c7edbbc7c66.png)
+![image](https://user-images.githubusercontent.com/31722512/166263256-48fcd090-f20a-4ef5-b53d-d7c6d3609aa2.png)
+![image](https://user-images.githubusercontent.com/31722512/166263288-4d9159da-5847-4c19-8b2f-879bdaaa0292.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 이런 것도 해보면 어떨까?
+![image](https://user-images.githubusercontent.com/31722512/166263687-63e90a56-ffa0-43eb-adac-20a4ce9d653f.png)
+![image](https://user-images.githubusercontent.com/31722512/166263877-45af3783-9fa1-404d-ba43-65afd44adbc6.png)
