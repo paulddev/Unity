@@ -2,3 +2,5 @@
 정리하기!
 
 https://unity.com/kr/how-to/how-architect-code-your-project-scales
+
+https://algorfati.tistory.com/170
