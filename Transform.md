@@ -5,6 +5,7 @@
 transform.position = transform.position + new Vector3(horizontalInput * movementSpeed);
 ```
 ![image](https://user-images.githubusercontent.com/31722512/167891662-2cd32605-230d-4501-85fa-6c6515248daa.png)
+
 User Script 작성하는 공간은 `C# API`, 엔진 내부는 C++ Engine으로 구현되어 있다. 물리충돌을 위한 Physics Box2D/Physx 공간이 따로 존재한다. 그런데 트랜스폼을 하나 움직이면 위의 3가지
 를 모두 고려하게 된다.
 
@@ -14,11 +15,11 @@ Translate 도 다양하게 오버로딩 되어있다. -> C++ Engine 내부로 �
 ![image](https://user-images.githubusercontent.com/31722512/167891226-d0a92768-f76d-49ec-a5dd-1fdc96868562.png)
 
 ## 행렬과 트랜스폼 (matrix & transform)
-![image](https://user-images.githubusercontent.com/31722512/167892800-5f118337-f3cf-4641-8b9f-06030345d91a.png)
-수포자를 위한 게임 수학 #17로 이어서 공부할 수 있다.
+![image](https://user-images.githubusercontent.com/31722512/167892800-5f118337-f3cf-4641-8b9f-06030345d91a.png) <br>
+`수포자를 위한 게임 수학 #17`로 이어서 공부할 수 있다.
 
 내부로는 결국 `행렬 형태`로 존재하게 된다.
-![image](https://user-images.githubusercontent.com/31722512/167893114-79fa207c-2f00-49d4-a3ea-07dd7472f794.png)
+![image](https://user-images.githubusercontent.com/31722512/167893114-79fa207c-2f00-49d4-a3ea-07dd7472f794.png) <br>
 연산 최적화 방법이다.
 
 많은 시스템에서 Transform을 업데이트를 하고 있다면? 모든 변경 사항들을 모아서 한 군데에서 처리하자.<br>
@@ -44,10 +45,10 @@ Transform -> Hierarchy
 ![image](https://user-images.githubusercontent.com/31722512/167895410-1c2b2914-1fdc-4b9a-9998-7a22ef3f1354.png)
 엄청 많아지게 되면 많은 연산이 필요하게 된다.
 
-![image](https://user-images.githubusercontent.com/31722512/167895466-cb70bf61-0f69-4778-afa0-7f19a7839989.png)
+![image](https://user-images.githubusercontent.com/31722512/167895466-cb70bf61-0f69-4778-afa0-7f19a7839989.png) <br>
 옵션을 체크하게 되면 계층 구조는 단순해지면서도 애니메이션이 잘 동작하게 된다. (성능을 선택 But 세세하게 접근할 수 없게 된다.)
 
 ![image](https://user-images.githubusercontent.com/31722512/167895570-8bb49b75-59ca-4eda-a004-e290cb2add56.png)
 ![image](https://user-images.githubusercontent.com/31722512/167895705-4a370b43-4036-446c-9bc5-17b49a2cd4ef.png)
 
-
+가장 많이 사용하는 부분인데, 생각보다 주의깊게 사용하지 않으면 많은 부분에서 퍼포먼스를 잃을 것이다!
